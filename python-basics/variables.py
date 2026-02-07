@@ -1,3 +1,19 @@
+# Example 1
 x = 5
-y = 10
-print("x + y =", x + y)
+print(x)
+
+# Example 2
+name = "Alice"
+print(name)
+
+# Example 3
+age = 18
+print(age)
+
+# Example 4
+is_student = True
+print(is_student)
+
+# Example 5
+a, b = 3, 7
+print(a + b)
