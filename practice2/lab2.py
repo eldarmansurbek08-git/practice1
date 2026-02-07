@@ -87,3 +87,94 @@
 #     print(s[i], end=' ')
 
 # 210
+# n = int(input())
+# a = list(map(int, input().split()))
+
+# a.sort(reverse=True)
+
+# print(*a)
+
+# 211
+# params = list(map(int, input().split()))[:3]
+# n, start_ind, end_ind = params[0], params[1], params[2] 
+# numbers = list(map(int, input().split()))[:n]
+# reversed_list = list(reversed(numbers[start_ind - 1: end_ind]))
+# numbers[start_ind - 1: end_ind] = reversed_list
+# print(*numbers)
+
+# 212
+# n, numbers = int(input()), list(map(int, input().split()))
+# for i in range(n): numbers[i] **= 2
+# print(*numbers)
+
+# 213
+# n, trig = int(input()), 1
+
+# if n < 2:
+#    print("No")
+# else:
+#    for i in range(2, n):
+#       if n%i == 0:
+#          print("No")
+#          break
+#    else: print("Yes")
+
+# 214
+# n, numbers = int(input()), list(map(int, input().split()))
+
+# freq = {}
+# for num in numbers: freq[num] = freq.get(num, 0) + 1
+
+# most_frequent = min(freq.keys(), key=lambda x: (-freq[x], x))
+# print(most_frequent)
+
+# 215
+# n, surnames = int(input()), {''}
+# for i in range(n): surnames.add(input())
+# print(len(surnames) - 1)
+
+# 216
+# n, numbers = int(input()), list(map(int, input().split()))
+# for i in range(len(numbers)):
+#    if numbers[i] not in numbers[0: i]:
+#       print("YES")
+#    else: print("NO")
+
+# 217
+# n = int(input())
+# freq = {}
+
+# for i in range(n):
+#     phone = input().strip()
+#     freq[phone] = freq.get(phone, 0) + 1
+
+# answer = 0
+# for count in freq.values():
+#     if count == 3:
+#         answer += 1
+
+# print(answer)
+
+# 218
+# n = int(input())
+# first = {}
+
+# for i in range(1, n+1):
+#    s = input()
+#    if s not in first:
+#       first[s] = i
+
+# for s in sorted(first):
+#    print(s, first[s])
+
+# 219
+# n = int(input())
+# watched = {}
+
+# for i in range(n):
+#    s, k = input().split()
+#    k = int(k)
+#    watched[s] = watched.get(s, 0) + k
+
+# for name in sorted(watched):
+#    print(name, watched[name])
