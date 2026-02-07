@@ -87,15 +87,3 @@
 #     print(s[i], end=' ')
 
 # 210
-n = int(input())
-a = list(map(int, input().split()))
-for i in range(n):
-    swapped = False
-    for j in range(0,n - i - 1 ):
-        if n[i] > n[j + 1]:
-            n[j], n[j + 1] = n[j + 1], n[j]
-            swapped = True
-    if not swapped:
-        break
-return n
-                    
