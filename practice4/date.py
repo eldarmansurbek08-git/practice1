@@ -1,4 +1,3 @@
-
 # If you have a JSON string, you can parse it by using the json.loads() method
 import json
 
